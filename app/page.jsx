@@ -1,10 +1,11 @@
 'use client'
+import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 const page = () => {
   const videoRef = useRef(null)
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5
+      videoRef.current.playbackRate = 0.3
     }
   }, [])
   return (
@@ -20,13 +21,23 @@ const page = () => {
           muted
         />
         {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black/80"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/85"></div>
         {/* Content */}
-        <div className="relative z-10 flex flex-col mt-20 h-full text-white px-4">
-          <h1 className="lg:text-3xl text-2xl font-bold text-yellow-500 mb-4">Loan Deduction Calculator</h1>
-          <p className="lg:text-md text-sm max-w-xl">
-            .....
-          </p>
+        <div className="relative z-10 flex flex-col mt-30 h-full text-white space-y-25 px-4 lg:px-10">
+          <div className='flex flex-col space-y-7'>
+            <h1 className="lg:text-5xl text-4xl  max-md:text-center font-bold text-yellow-400">Loan Deduction Calculator</h1>
+            <p className="lg:text-lg max-md:text-center text-sm max-w-xl text-gray-300">Easily calculate your monthly deductions in seconds. Plan smarter, borrow confidently, and stay in control of your finances.
+            </p>
+          </div>
+
+          <div className='flex max-md:items-center flex-col max-md:justify-center space-y-3'>
+            <Link href={'/'}>
+              <div className='rounded-lg bg-yellow-400 max-md:text-sm px-5 py-3 w-fit text-black font-semibold'>Click here to calculate</div>
+            </Link>
+            <p className='text-xs text-gray-500'>Calculate your deductions with Mutual Trust MFB</p>
+          </div>
+
+
         </div>
       </div>
     </main>
