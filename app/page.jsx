@@ -32,7 +32,7 @@ const page = () => {
 
           <div className='flex max-md:items-center flex-col max-md:justify-center space-y-3'>
             <Link href={'/'}>
-              <div className='rounded-lg bg-yellow-400 max-md:text-sm px-5 py-3 w-fit text-black font-semibold'>Click here to calculate</div>
+              <div className='rounded-lg bg-yellow-400 max-md:text-sm px-5 py-3 w-fit text-black font-semibold hover:bg-red-100'>Click here to calculate</div>
             </Link>
             <p className='text-xs text-gray-500'>Calculate your deductions with Mutual Trust MFB</p>
           </div>
