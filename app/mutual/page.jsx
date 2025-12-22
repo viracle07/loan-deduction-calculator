@@ -85,7 +85,7 @@ const page = () => {
                 {/* Content */}
                 <div className="relative z-10 flex items-center flex-col justify-center mt-10 h-full text-white space-y-10 px-4 lg:px-10 pb-15">
                     <h1 className='text-sm text-center text-gray-400 italic'>
-                        Please fill in your salary, loan amount, and preferred tenor.
+                        Please fill in your salary, loan amount, and preferred tenor. Once completed, click Calculate to see your estimated monthly deductions.
                     </h1>
 
                     <form
@@ -186,7 +186,7 @@ const page = () => {
                             </h2>
 
                             <p className='text-xs text-yellow-400 font-semibold'>
-                                N/B: Result subject to credit bureau checks.
+                                N/B: This result is subject to change because of loan found on credit bureau and other credit checks.
                             </p>
                         </div>
                     )}
